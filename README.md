@@ -1,8 +1,8 @@
 # NetElixir-Hackathon 👾
 AIgnition 2.0 Hackathon Challenge
 
-## Title: Hyper-Personalized Landing Page Generator Agent
-## Team Members
+### Title: Hyper-Personalized Landing Page Generator Agent
+## Team Members 👥
 - Harahith YVS
 - Deeksha R
 - Lohiht Obulapuram
