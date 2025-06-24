@@ -1,15 +1,15 @@
-# NetElixir-Hackathon
+# NetElixir-Hackathon 👾
 AIgnition 2.0 Hackathon Challenge
 
 ## Title: Hyper-Personalized Landing Page Generator Agent
-## Objective
+## 🌟 Objective
 Develop an AI-powered prototype that can dynamically generate hyper-personalized landing
 pages for new or guest users visiting an eCommerce website. The solution should intelligently
 recommend content and product modules based on inferred patterns of past user behavior,
 demographics, and transaction trends. Importantly, the prototype must also incorporate a
 strategy to address the cold start problem often encountered in recommendation engines.
 
-## Problem Statement
+## ✍🏻 Problem Statement
 Today, digital commerce platforms are flooded with data, but struggle to personalize
 experiences for users with little to no history — such as first-time or anonymous visitors. Most
 recommendation systems rely heavily on behavioral or transactional history, and their
