@@ -2,6 +2,11 @@
 AIgnition 2.0 Hackathon Challenge
 
 ## Title: Hyper-Personalized Landing Page Generator Agent
+## Team Members
+- Harahith YVS
+- Deeksha R
+- Lohiht Obulapuram
+  
 ## 🌟 Objective
 Develop an AI-powered prototype that can dynamically generate hyper-personalized landing
 pages for new or guest users visiting an eCommerce website. The solution should intelligently
