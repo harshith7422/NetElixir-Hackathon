@@ -49,10 +49,9 @@ It intelligently recommends page modules (hero banners, product carousels, CTAs)
 
 ---
 
-## 🧩 Tech Stack
+## 🧩 Results
 
-- **Python**, **Pandas**, **Scikit-learn**, **Streamlit**
-- Jupyter Notebook
+
 
 ---
 
