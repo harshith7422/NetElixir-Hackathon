@@ -1,30 +1,63 @@
 # NetElixir-Hackathon 👾
 AIgnition 2.0 Hackathon Challenge
 
-### Title: Hyper-Personalized Landing Page Generator Agent
+### Title: Hyper-Personalized Landing Page Generator Agent🚀
 ## Team Members 👥
 - Harahith YVS
 - Deeksha R
 - Lohiht Obulapuram
-  
-## 🌟 Objective
-Develop an AI-powered prototype that can dynamically generate hyper-personalized landing
-pages for new or guest users visiting an eCommerce website. The solution should intelligently
-recommend content and product modules based on inferred patterns of past user behavior,
-demographics, and transaction trends. Importantly, the prototype must also incorporate a
-strategy to address the cold start problem often encountered in recommendation engines.
 
-## ✍🏻 Problem Statement
-Today, digital commerce platforms are flooded with data, but struggle to personalize
-experiences for users with little to no history — such as first-time or anonymous visitors. Most
-recommendation systems rely heavily on behavioral or transactional history, and their
-effectiveness is limited in "cold start" scenarios where data about the user is not yet available.
-Your task is to build a Hyper-Personalized Landing Page Generator Agent that can:
-1. Analyze patterns in historical data to infer user interests and segment preferences.
-2. Recommend personalized landing page modules (e.g., hero images, product
-carousels, CTAs) for incoming new users based on matching behavioral/demographic
-signals.
-3. Solve the cold start problem by designing fallback strategies using available attributes
-like region, device type, traffic source, demographic cohort, and general trends.
-In essence, the system should behave like an intelligent concierge for first-time visitors, tailoring
-the website experience based on what it has learned from past user behavior.
+## 📌 Overview
+
+This project is a working AI-powered prototype that dynamically generates hyper-personalized landing pages for **new or guest users** visiting an eCommerce website.  
+It intelligently recommends page modules (hero banners, product carousels, CTAs) by learning from past user behavior, demographics, and transaction trends — while also solving the **cold start problem** using fallback logic.
+
+---
+
+## ⚙️ Solution Workflow
+
+**1. Data Understanding & Preprocessing**
+- Joined GA4-style user activity logs with transaction data using `transaction_id`.
+- Reconstructed complete user sessions grouped by `user_pseudo_id`.
+- Aggregated browsing and purchase behavior for every user.
+
+**2. User Segmentation**
+- Engineered user-level features: engagement levels, top events, demographics, sources, region.
+- Applied `KMeans` clustering to create behavioral segments (e.g., repeat purchasers, cart abandoners).
+
+**3. Cold Start Strategy**
+- Designed fallback recommendations using:
+  - Region-specific top categories & trends.
+  - Profile similarity (demographic/source-based logic).
+  - Rule-based default modules for anonymous users.
+
+**4. Personalization Logic**
+- Mapped each segment to landing page modules:
+  - Hero banner, product carousel, and CTA block.
+- For new users: fallback uses region or overall trends.
+
+**5. Prototype**
+- Simple **Streamlit** UI shows real-time landing page generation for a given user ID or new visitor.
+- Easy to extend into any frontend stack.
+
+---
+
+## 📊 Datasets Used
+
+- `User Activity Log`: session-level events, device, demographics, region, traffic source.
+- `Transaction Data`: actual purchases, revenue, item category/brand.
+
+---
+
+## 🧩 Tech Stack
+
+- **Python**, **Pandas**, **Scikit-learn**, **Streamlit**
+- Jupyter Notebook
+
+---
+
+## ✅ How to Run
+
+```bash
+pip install pandas scikit-learn streamlit
+streamlit run app.py
